@@ -1,0 +1,22 @@
+--- Running Algorithm Verification ---
+Input:    "I am eating an apple"
+Expected: "i apple eat"
+Actual:   "i apple eat"
+Status:   PASS
+------------------------------
+Input:    "She is going to the market"
+Expected: "she market go"
+Actual:   "she market go"
+Status:   PASS
+------------------------------
+Input:    "We are playing football in the field"
+Expected: "we football field play"
+Actual:   "we football in field play"
+Status:   FAIL
+------------------------------
+Input:    "I don't understand the question"
+Expected: "i question understand"
+Actual:   "i not understand question do"
+Status:   FAIL
+------------------------------
+SOME TESTS FAILED. Please check the heuristic logic.
