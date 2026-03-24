@@ -22,9 +22,6 @@ DISPLAY_TIME = 1.5  # seconds each sign is shown
 
 
 
-genai.configure(api_key="AIzaSyDRZSKyz-xc09WyIY6Nty9ceX_uVbBdHyc")
-gemini_model = genai.GenerativeModel("gemini-2.5-flash")
-
 # =========================
 # LOW-LEVEL SIGN UTILITIES
 # (YOUR ORIGINAL LOGIC, REFACTORED)
