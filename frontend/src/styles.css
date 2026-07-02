@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface text-txt-primary font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight text-txt-primary;
+  }
+}
+
+@layer components {
+  /* Buttons - Bubbly and Friendly */
+  /* Buttons - Bubbly and Friendly */
+  .btn-primary {
+    @apply bg-brand-500 text-white font-bold py-3 px-8 rounded-2xl hover:bg-brand-600 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 border-b-4 border-brand-700;
+    box-shadow: 0 4px 0 0 rgba(0,0,0,0.1);
+  }
+
+  .btn-primary:active {
+    box-shadow: 0 2px 0 0 rgba(0,0,0,0.1);
+  }
+
+  .btn-accent {
+    @apply bg-accent-green text-white font-bold py-3 px-8 rounded-2xl hover:bg-accent-green-dark hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 border-b-4 border-accent-green-dark/50;
+    box-shadow: 0 4px 0 0 rgba(0,0,0,0.1);
+  }
+
+  .btn-accent:active {
+    box-shadow: 0 2px 0 0 rgba(0,0,0,0.1);
+  }
+
+  .btn-secondary {
+    @apply bg-white border-2 border-surface-muted text-txt-secondary font-bold py-3 px-8 rounded-2xl hover:bg-surface-muted hover:text-txt-primary active:scale-[0.98] transition-all duration-200;
+  }
+  
+  .btn-outline {
+    @apply bg-transparent border-2 border-brand-500 text-brand-500 font-bold py-3 px-8 rounded-2xl hover:bg-brand-50 hover:scale-[1.02] transition-all duration-200;
+  }
+
+  /* Cards - Soft & Lifted */
+  .card-base {
+    @apply bg-white rounded-3xl border-2 border-surface-muted p-6 hover:border-brand-200 transition-colors duration-200;
+  }
+  
+  .card-hover {
+    @apply card-base hover:-translate-y-1 hover:shadow-card-hover transition-all duration-300 cursor-pointer;
+  }
+
+  /* Progress Bars */
+  .progress-container {
+    @apply w-full bg-surface-muted rounded-full h-3 overflow-hidden;
+  }
+  
+  .progress-bar {
+    @apply bg-accent-green h-full rounded-full transition-all duration-500 ease-out;
+  }
+
+  /* Navigation */
+  .nav-link {
+    @apply text-txt-secondary hover:text-brand-500 font-bold text-sm tracking-wide uppercase transition-colors duration-200;
+  }
+  .nav-link.active {
+    @apply text-brand-500;
+  }
+}
